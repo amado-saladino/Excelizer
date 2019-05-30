@@ -1,0 +1,8 @@
+/.settings/
+**/*.jar
+pom.xml.versionsBackup
+.classpath
+.project
+testng.xml
+target/
+test-output/
