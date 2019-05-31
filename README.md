@@ -4,7 +4,7 @@ You don't have to build your own Excel reader library nor have to get knowledge 
 
 ## Download and Installation
 Add the dependency from this [link.
-](https://search.maven.org/artifact/com.github.amado-saladino/excelizer/1.0.1/jar)
+](https://mvnrepository.com/artifact/com.github.amado-saladino/excelizer/1.0.1)
 
 ### Maven sample
 ```
