@@ -8,8 +8,8 @@ import com.ahmed.excelizer.ExcelReader;
 public class Test1 {
 	
 	@DataProvider(name = "DataProviderForUsers")
-	public Object[][] usersData() {		
-		return ExcelReader.loadTestData("Data\\TestData.xlsx","register");
+	public Object[][] usersData() {
+		return ExcelReader.loadTestData("data\\TestData.xlsx", "register");
 	}
 	
 	@DataProvider(name = "DataProviderForNames")
@@ -18,9 +18,8 @@ public class Test1 {
 	}
 	
 	@Test(dataProvider="DataProviderForUsers")
-	public void test1(String name,String email,String password,String gender) {
-		
-		System.out.println("This is test...");
+	public void test1(String name,String email,String password,String gender) {		
+		System.out.println("This is a test...");
 		System.out.println(name);
 		System.out.println(email);
 		System.out.println(password);
