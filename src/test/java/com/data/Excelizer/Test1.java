@@ -31,6 +31,9 @@ public class Test1 {
 	public void test2(String name,String phone) {		
 		System.out.println("This is test...");
 		System.out.println(name);
+		
+		if (phone.isEmpty()) System.out.println("The field is empty");
+		
 		System.out.println(phone);
 		System.out.println("......");
 	}
