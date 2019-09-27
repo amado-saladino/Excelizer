@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.exceptions.InvalidOperationException;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -27,7 +28,8 @@ public class ExcelReader {
 	}
 
 	private static String readCell(int rowIndex, int colIndex) {
-		return sheet.getRow(rowIndex).getCell(colIndex).getStringCellValue();
+		String cell = sheet.getRow(rowIndex).getCell(colIndex,Row.MissingCellPolicy.CREATE_NULL_AS_BLANK).getStringCellValue();
+		return cell;		
 	}
 
 	/**

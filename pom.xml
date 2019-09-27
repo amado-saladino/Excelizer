@@ -5,13 +5,13 @@
 
 	<groupId>com.github.amado-saladino</groupId>
 	<artifactId>excelizer</artifactId>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	<packaging>jar</packaging>
 
 	<name>Excelizer</name>
 	<description>Data source layer for data-driven tests using TestNG or JUnit</description>
 	<url>https://github.com/amado-saladino/Excelizer</url>
-
+	
 	<licenses>
 		<license>
 			<name>The Apache License, Version 2.0</name>
@@ -124,7 +124,6 @@
 	</build>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
