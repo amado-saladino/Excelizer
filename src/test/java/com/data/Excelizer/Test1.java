@@ -9,12 +9,12 @@ public class Test1 {
 	
 	@DataProvider(name = "DataProviderForUsers")
 	public Object[][] usersData() {
-		return ExcelReader.loadTestData("data\\TestData.xlsx", "register");
+		return ExcelReader.loadTabularData("data\\TestData.xlsx", "register");
 	}
 	
 	@DataProvider(name = "DataProviderForNames")
 	public Object[][] userPhone() {
-		return ExcelReader.loadTestData("Data\\TestData.xlsx","sheet2");
+		return ExcelReader.loadTabularData("Data\\TestData.xlsx","sheet2");
 	}
 	
 	@Test(dataProvider="DataProviderForUsers")
